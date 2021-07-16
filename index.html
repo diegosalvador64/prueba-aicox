@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Externalizo las funciones de JS en un ficherito
+       Esto hace que HTML y JavaScript sean más fáciles de leer y mantener-->
+        <script src="js/myScripts.js">    
+            alert("Hola");  
+        </script>
+
+    </head>
+    <body>
+
+    <h1>Ejemplos simples de Javascript</h1>
+    <p id="cambio1">Un parrafito</p>
+    <button type="button" onclick="myFunction()">¡Inténtalo!</button>
+    
+    <h2>¿Qué puede hacer Javascript?</h2>
+    
+    <h2 id="demo">JavaScript puede cambiar el contenido de HTML.</h2>
+    
+    <button type="button" onclick='document.getElementById("demo").style.fontSize="35px"'>¡Púlsame!</button>
+
+    <h2 id="fecha">JavaScript te muestra también fecha y hora</h2>
+
+     <!--Enciéndelas, apágalas!!-->
+    <diV>
+        <button type="button" onclick='document.getElementById("fecha").innerHTML = Date()'>Mostrar fecha y hora</button>
+        <br>
+
+        <button onclick="document.getElementById('myImage').src='img/ONbulb.jpg'">Enciende la luz</button>
+
+        <img id="myImage" src="img/OFFbulb.jpg" style="width:100px">
+
+        <button onclick="document.getElementById('myImage').src='img/OFFbulb.jpg'">Apaga la luz</button>
+    </diV>
+    <br>
+
+    <h2 id="escondido" style="display: none">JavaScript también muestra objetos escondidos.</h2>
+    
+    <button type="button" onclick='document.getElementById("escondido").style.display="block"'>Muestra un objeto escondido</button>
+    <br>
+    <br>
+    <br>
+    <h2>Si pulsas aquí, borrarás todo lo anterior</h2>
+    <button type="button" onclick="document.write('<h1>Te lo dije, ¡MELÓN!</h1>')">Surprise surprise</button>
+    
+    </body>
+    </html>
+    
